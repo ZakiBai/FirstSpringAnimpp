@@ -41,7 +41,7 @@ final class ViewController: UIViewController {
         springAnimationView.duration = Double.random(in: 0.5 ..< 1.5)
         springAnimationView.animate()
         
-        animationLabel.text = animations[num].animationType
+        animationLabel.text = springAnimationView.animation
         curveLabel.text = springAnimationView.curve
         forceLabel.text = String(format: "%.2f", springAnimationView.force)
         durationLabel.text = String(format: "%.2f", springAnimationView.duration)
