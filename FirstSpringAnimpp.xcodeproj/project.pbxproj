@@ -14,6 +14,7 @@
 		3598B4752A021A0F00F31581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3598B4742A021A0F00F31581 /* Assets.xcassets */; };
 		3598B4782A021A0F00F31581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3598B4762A021A0F00F31581 /* LaunchScreen.storyboard */; };
 		3598B4812A021A7B00F31581 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 3598B4802A021A7B00F31581 /* SpringAnimation */; };
+		3598B4892A0231C600F31581 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598B4882A0231C600F31581 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3598B4742A021A0F00F31581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3598B4772A021A0F00F31581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3598B4792A021A0F00F31581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3598B4882A0231C600F31581 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +60,56 @@
 		3598B46A2A021A0D00F31581 /* FirstSpringAnimpp */ = {
 			isa = PBXGroup;
 			children = (
-				3598B46B2A021A0D00F31581 /* AppDelegate.swift */,
-				3598B46D2A021A0D00F31581 /* SceneDelegate.swift */,
-				3598B46F2A021A0D00F31581 /* ViewController.swift */,
-				3598B4712A021A0D00F31581 /* Main.storyboard */,
-				3598B4742A021A0F00F31581 /* Assets.xcassets */,
-				3598B4762A021A0F00F31581 /* LaunchScreen.storyboard */,
-				3598B4792A021A0F00F31581 /* Info.plist */,
+				3598B4842A02316400F31581 /* App */,
+				3598B4862A02319700F31581 /* ViewControllers */,
+				3598B4852A02318A00F31581 /* Storyboards */,
+				3598B4872A0231AD00F31581 /* Resources */,
+				3598B48A2A0231C900F31581 /* Models */,
 			);
 			path = FirstSpringAnimpp;
+			sourceTree = "<group>";
+		};
+		3598B4842A02316400F31581 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3598B46B2A021A0D00F31581 /* AppDelegate.swift */,
+				3598B46D2A021A0D00F31581 /* SceneDelegate.swift */,
+				3598B4792A021A0F00F31581 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3598B4852A02318A00F31581 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3598B4712A021A0D00F31581 /* Main.storyboard */,
+				3598B4762A021A0F00F31581 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3598B4862A02319700F31581 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3598B46F2A021A0D00F31581 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3598B4872A0231AD00F31581 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3598B4742A021A0F00F31581 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3598B48A2A0231C900F31581 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3598B4882A0231C600F31581 /* Animation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +191,7 @@
 			files = (
 				3598B4702A021A0D00F31581 /* ViewController.swift in Sources */,
 				3598B46C2A021A0D00F31581 /* AppDelegate.swift in Sources */,
+				3598B4892A0231C600F31581 /* Animation.swift in Sources */,
 				3598B46E2A021A0D00F31581 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstSpringAnimpp/Info.plist;
+				INFOPLIST_FILE = FirstSpringAnimpp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +372,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstSpringAnimpp/Info.plist;
+				INFOPLIST_FILE = FirstSpringAnimpp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
