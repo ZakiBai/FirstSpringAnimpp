@@ -25,27 +25,27 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         animationLabel.text = animations[num].animationType
-        curveLabel.text = curveTypes.randomElement() ?? ""
-        forceLabel.text = String(format: "%.2f", Double.random(in: 0.5 ..< 2.0))
-        durationLabel.text = String(format: "%.2f", Double.random(in: 0.5 ..< 1.5))
-        delayLabel.text = "1.50"
+        curveLabel.text = animations[num].curveType
+        forceLabel.text = animations[num].force
+        durationLabel.text = animations[num].duration
+        delayLabel.text = animations[num].delay
         
     }
     
     @IBAction func springAnimationRunButtonTapped(_ sender: SpringButton) {
     
         springAnimationView.animation = animations[num].animationType
-        springAnimationView.curve = curveTypes.randomElement() ?? ""
-        springAnimationView.delay = 1.5
-        springAnimationView.force = Double.random(in: 0.5 ..< 2.0)
-        springAnimationView.duration = Double.random(in: 0.5 ..< 1.5)
+        springAnimationView.curve = animations[num].curveType
+        springAnimationView.delay = Double(animations[num].delay) ?? 0
+        springAnimationView.force = Double(animations[num].force) ?? 0
+        springAnimationView.duration = Double(animations[num].duration) ?? 0
         springAnimationView.animate()
         
-        animationLabel.text = springAnimationView.animation
-        curveLabel.text = springAnimationView.curve
-        forceLabel.text = String(format: "%.2f", springAnimationView.force)
-        durationLabel.text = String(format: "%.2f", springAnimationView.duration)
-        delayLabel.text = String(format: "%.2f", springAnimationView.delay)
+        animationLabel.text = animations[num].animationType
+        curveLabel.text = animations[num].curveType
+        forceLabel.text = animations[num].force
+        durationLabel.text = animations[num].duration
+        delayLabel.text = animations[num].delay
         
         if num == (animations.count - 1) {
             num = 0
